@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Lavtec</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+        /* Botão posicionado na parte inferior da coluna no desktop */
+        @media (min-width: 768px) {
+            .whatsapp-desktop {
+                display: flex;
+                align-items: flex-end;
+                height: 100%;
+                padding-bottom: 40px; /* descola da parte inferior */
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-5">
+                <img src="img/logo.jpg" alt="logo" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Texto -->
+            <div class="col-12 col-md-6 col-lg-5 text-center">
+                <div class="text-azul">
+                    <h1 class="h3 mt-5 fw-normal">ASSISTÊNCIA TÉCNICA EM</h1>
+                </div>
+                <div>
+                    <h1 class="h4 fw-normal">LAVADORAS DE ROUPA, LAVA E SECA E GELADEIRAS</h1>
+                </div>
+
+                <!-- Botão para CELULAR: visível só em mobile -->
+                <div class="d-block d-md-none mt-4">
+                    <a href="https://wa.me/5516992452271" class="btn btn-success w-100 d-flex justify-content-center align-items-center gap-2" target="_blank" style="background-color: #41e85f;">
+                        Entre em contato
+                        <img src="img/watsap.jpg" alt="wats" style="width: 20px; height: auto;">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Botão para DESKTOP/TABLET: visível só em md+ -->
+            <div class="d-none d-md-flex col-md-6 col-lg-5 whatsapp-desktop justify-content-center">
+                <a href="https://wa.me/5516992452271" class="btn btn-success w-75 d-flex justify-content-center align-items-center gap-2" target="_blank" style="background-color: #41e85f;">
+                    Entre em contato
+                    <img src="img/watsap.jpg" alt="wats" style="width: 20px; height: auto;">
+                </a>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
